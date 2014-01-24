@@ -7,12 +7,14 @@ Template.users.helpers({
 
 Template.bands.helpers({
 	bands: function() {
-		Bands.find();
+		return Bands.find();
 	}
 });
 
 Template.home.helpers({
-
+	bands: function() {
+		return Bands.find();
+	}
 });
 
 Template.home.rendered = function() {

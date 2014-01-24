@@ -9,7 +9,7 @@ Router.map(function() {
     data: function() {
       $('h1').append('data');
       return {
-        bands: Bands.find()
+        
       }
     }
   });
@@ -25,7 +25,7 @@ Router.map(function() {
     },
     data: function() {
       return {
-        bands: Bands.find()
+        
       }
     }
   });
@@ -65,5 +65,8 @@ Router.map(function() {
 
 Router.configure({
   layoutTemplate : 'layout',
-  notFoundTemplate : notFound
+  notFoundTemplate : notFound,
+  before: function() {
+    console.log('before router');
+  }
 });
