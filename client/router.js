@@ -7,7 +7,6 @@ Router.map(function() {
       Meteor.subscribe('bands');
     },
     data: function() {
-      $('h1').append('data');
       return {
         
       }
@@ -28,18 +27,6 @@ Router.map(function() {
         
       }
     }
-  });
-
-  this.route('a', {
-    path: '/a`'
-  });
-
-  this.route('b', {
-    path: '/b'
-  });
-
-  this.route('test', {
-    path: '/testing/test'
   });
 
   this.route('events', {
